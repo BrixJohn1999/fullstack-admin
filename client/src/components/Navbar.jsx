@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  // eslint-disable-next-line
   LightModeOutlined,
   DarkModeOutlined,
   Menu as MenuIcon,
