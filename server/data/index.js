@@ -18361,14 +18361,14 @@ export const dataAffiliateStat = [
     },
     {
       _id: "63701cc1f0323944410002e6",
-      name: "Brynna",
-      email: "bluebbert1i@mac.com",
+      name: "Brix John",
+      email: "brixjohn@gmail.com",
       password: "16FBKEbQF",
-      city: "Pakel",
+      city: "Davao",
       state: null,
       country: "ID",
       occupation: "Operator",
-      phoneNumber: "4774537814",
+      phoneNumber: "Developer",
       transactions: [
         "63701d74f03239569400002d",
         "63701d74f032395b33000158",
