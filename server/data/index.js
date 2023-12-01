@@ -18367,8 +18367,8 @@ export const dataAffiliateStat = [
       city: "Davao",
       state: null,
       country: "ID",
-      occupation: "Operator",
-      phoneNumber: "Developer",
+      occupation: "Developer",
+      phoneNumber: "996766546",
       transactions: [
         "63701d74f03239569400002d",
         "63701d74f032395b33000158",

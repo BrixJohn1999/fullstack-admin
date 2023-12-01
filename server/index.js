@@ -43,7 +43,7 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ONLY ADD DATA ONE TIME*/
-    // User.insertMany(dataUser);
+    User.insertMany(dataUser);
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
