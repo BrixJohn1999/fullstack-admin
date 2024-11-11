@@ -31,7 +31,7 @@ import {
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import FlexBetween from "./FlexBetween";
-import profileImage from "../assets/profile.jpg";
+import profileImage from "assets/profile.jpg";
 
 const navItems = [
   {
@@ -79,7 +79,7 @@ const navItems = [
     icon: <PieChartOutlined />,
   },
   {
-    text: "Managemaent",
+    text: "Management",
     icon: null,
   },
   {
@@ -107,6 +107,7 @@ const Sidebar = ({
   useEffect(() => {
     setActive(pathname.substring(1));
   }, [pathname]);
+
   return (
     <Box component="nav">
       {isSidebarOpen && (
@@ -126,12 +127,12 @@ const Sidebar = ({
             },
           }}
         >
-          <Box width={"100%"}>
+          <Box width="100%">
             <Box m="1.5rem 2rem 2rem 3rem">
               <FlexBetween color={theme.palette.secondary.main}>
                 <Box display="flex" alignItems="center" gap="0.5rem">
-                  <Typography variant="h4" fontWeight="bold">
-                    BRIX SYSTEM.inc
+                  <Typography variant="h4" fontWeight="bold" fontStyle="italic">
+                    BRIX System
                   </Typography>
                 </Box>
                 {!isNonMobile && (
@@ -151,6 +152,7 @@ const Sidebar = ({
                   );
                 }
                 const lcText = text.toLowerCase();
+
                 return (
                   <ListItem key={text} disablePadding>
                     <ListItemButton
@@ -217,10 +219,13 @@ const Sidebar = ({
                 >
                   {user.occupation}
                 </Typography>
-                <SettingsOutlined
-                  sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
-                />
               </Box>
+              <SettingsOutlined
+                sx={{
+                  color: theme.palette.secondary[300],
+                  fontSize: "25px ",
+                }}
+              />
             </FlexBetween>
           </Box>
         </Drawer>
